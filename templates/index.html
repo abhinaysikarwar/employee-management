@@ -1,29 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Employee Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devika Finance Office</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<h1>Employee Management System</h1>
+<div class="overlay">
+
+<nav>
+
+<div class="logo">
+🏦 Devika Finance Office
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<a href="#" class="admin-btn">
+Admin Login
+</a>
+
+</nav>
+
+<div class="hero">
+
+<div class="left">
+
+<h1>
+Welcome To
+<br>
+<span>Devika Finance Office</span>
+</h1>
+
+<p>
+
+Your Trusted Financial Partner
+
+<br><br>
+
+✔ Personal Loan
+
+<br>
+
+✔ Business Loan
+
+<br>
+
+✔ Gold Loan
+
+<br>
+
+✔ Insurance Services
+
+</p>
+
+</div>
+
+<div class="right">
+
+<div class="form-box">
+
+<h2>Customer Registration</h2>
 
 <form method="POST">
 
-<label>Name</label><br>
-<input type="text" name="name" required><br><br>
+<label>Full Name</label>
 
-<label>Age</label><br>
-<input type="number" name="age" required><br><br>
+<input
+type="text"
+name="fullname"
+placeholder="Enter Full Name"
+required>
 
-<label>Department</label><br>
-<input type="text" name="department" required><br><br>
+<label>Father Name</label>
+
+<input
+type="text"
+name="fathername"
+placeholder="Enter Father Name"
+required>
+
+<label>Qualification</label>
+
+<input
+type="text"
+name="qualification"
+placeholder="Qualification"
+required>
+
+<label>Mobile Number</label>
+
+<input
+type="text"
+name="mobile"
+placeholder="9876543210"
+required>
+
+<label>Email</label>
+
+<input
+type="email"
+name="email"
+placeholder="example@gmail.com"
+required>
+
+<label>Address</label>
+
+<textarea
+name="address"
+rows="4"
+placeholder="Enter Address"
+required></textarea>
 
 <button type="submit">
-Add Employee
+
+Register Now
+
 </button>
 
 </form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<section
+id="about"
+class="about">
+
+<h2>About Devika Finance Office</h2>
+
+<p>
+
+Devika Finance Office provides reliable financial solutions including
+Personal Loans, Business Loans, Gold Loans and Insurance services.
+Our goal is to provide quick approvals, transparent services and trusted
+financial support to every customer.
+
+</p>
+
+</section>
+
+<section
+id="services"
+class="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>💰 Personal Loan</h3>
+
+<p>
+
+Quick approval with minimum documentation.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏢 Business Loan</h3>
+
+<p>
+
+Grow your business with flexible financing.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Gold Loan</h3>
+
+<p>
+
+Instant loan against gold at attractive interest rates.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛡 Insurance</h3>
+
+<p>
+
+Life, Health and Vehicle Insurance plans.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Devika Finance Office
+
+All Rights Reserved
+
+</footer>
 
 </body>
 </html>

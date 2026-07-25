@@ -1,0 +1,439 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:url("images/finance-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+}
+
+.overlay{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+    width:100%;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin:0 18px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#FFD700;
+
+}
+
+.admin-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#0d6efd;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.admin-btn:hover{
+
+    background:#084298;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    min-height:85vh;
+
+    padding:40px;
+
+}
+
+.left{
+
+    width:45%;
+
+    color:white;
+
+}
+
+.left h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.left span{
+
+    color:#FFD700;
+
+}
+
+.left p{
+
+    font-size:20px;
+
+    line-height:40px;
+
+}
+
+/* ================= FORM ================= */
+
+.right{
+
+    width:420px;
+
+}
+
+.form-box{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 25px rgba(0,0,0,.35);
+
+}
+
+.form-box h2{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    margin-top:7px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#FFD700;
+
+    color:black;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ffc107;
+
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+
+    background:#f7f9fc;
+
+    padding:70px;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+    font-size:35px;
+
+}
+
+.about p{
+
+    width:80%;
+
+    margin:auto;
+
+    line-height:35px;
+
+    font-size:18px;
+
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+
+    padding:70px;
+
+    background:white;
+
+}
+
+.services h2{
+
+    text-align:center;
+
+    color:#0d6efd;
+
+    margin-bottom:45px;
+
+    font-size:35px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#f5f5f5;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.card h3{
+
+    margin-bottom:20px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+.left{
+
+    width:100%;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.left h1{
+
+    font-size:38px;
+
+}
+
+.right{
+
+    width:100%;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    margin:20px 0;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.about p{
+
+    width:100%;
+
+}
+
+}
